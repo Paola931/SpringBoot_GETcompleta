@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/v2")
 public class ControllerV2 {
-    @GetMapping(path = "/{provincia}")
+    @GetMapping(path = "/ciao/{provincia}")
     public User hello(
             @PathVariable String provincia,
             @RequestParam(value = "nome", required = true)String nome){
